@@ -1,0 +1,25 @@
+#!/bin/bash
+#RCON Restart Script (by DerBorny)
+
+source ./inc/config
+
+echo "Broadcast: Server wird in 60 Sekunden heruntergefahren!"
+./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast Server wird in 60 Sekunden heruntergefahren!
+sleep 30
+echo "Broadcast: Server wird in 30 Sekunden heruntergefahren!"
+./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast Server wird in 30 Sekunden heruntergefahren!
+sleep 25
+echo "Broadcast: Server speichert und faehrt herunter!"
+./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast Server speichert und faehrt herunter!
+echo "Welt und Spielerdaten werden gespeichert!"
+./inc/rcon -P${PW} -a${IP} -p${PORT} SaveWorld
+sleep 5
+echo "ARK Server wird heruntergefahren!"
+##./arkserver.sh##top
+echo "Backup wird angefertigt /hdd/sdc/backups/arksrv/"
+./arkserver.sh backup
+sleep 2
+echo "ARK Server wird wieder gestartet!"
+##./arkserver.sh##tart
+end
+

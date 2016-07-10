@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#RCON Password
+PW="DEIN_PASSWORT_HIER"
+
+#RCON Host
+IP="127.0.0.1"
+
+#RCON Port
+PORT="32330"
