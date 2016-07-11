@@ -31,7 +31,7 @@ echo "300 Sekunden = 5 Minuten"
 echo ""
 echo -n "Eingabe: ";read ABSTAND
 clear
-echo "Folgende Nachricht wird im Abstand von ${ABSTAND} Sekunden, 20 mal geposted: ${MESSAGE}"
+echo "Folgende Nachricht wird 20 mal im Abstand von ${ABSTAND} Sekunden geposted: ${MESSAGE}"
 echo ""
 echo ""
 echo "Broadcast 1"
