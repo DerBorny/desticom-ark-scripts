@@ -30,8 +30,10 @@ echo "1800 Sekunden = 30 Minuten"
 echo "300 Sekunden = 5 Minuten"
 echo ""
 echo -n "Eingabe: ";read ABSTAND
-
-
+clear
+echo "Folgende Nachricht wird im Abstand von ${ABSTAND} Sekunden, 20 mal geposted: ${MESSAGE}"
+echo ""
+echo ""
 echo "Broadcast 1"
 ./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
