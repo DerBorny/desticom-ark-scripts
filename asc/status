@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ps u | grep "ShooterGameServer"
+
+sleep 5
+
+exit

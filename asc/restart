@@ -1,0 +1,6 @@
+#!/bin/bash
+
+screen -S RestartScript ./asc/inc/restart_script
+
+
+exit
