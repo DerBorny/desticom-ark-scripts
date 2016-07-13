@@ -1,0 +1,50 @@
+#!/bin/bash
+clear
+echo "DestiCOM.net ARK-Server-Control (by DerBorny)"
+echo "#############################################"
+echo "Mögliche Optionen:"
+echo "broadcast, restart, status, update, backup, start, stop, help"
+echo ""
+echo ""
+echo ""
+read -p "Was möchtest du tun? " ANTWORT
+
+case "$ANTWORT" in
+
+	broadcast|b)
+		cd ~
+		./asc/broadcast
+			;;
+	restart)
+		cd ~
+		./asc/restart
+			;;
+	view|status)
+		cd ~
+		./asc/status
+			;;
+	update)
+		cd ~
+		./asc/update
+			;;
+	backup)
+		cd ~
+		./arkserver.sh backup
+			;;
+	start)
+		cd ~
+		./arkserver.sh start
+			;;
+	stop)
+		cd ~
+		./arkserver.sh stop
+			;;
+	help|h)
+		cd ~
+		./asc/help
+			;;
+esac
+		cd ~
+		./start
+exit 1
+;;
