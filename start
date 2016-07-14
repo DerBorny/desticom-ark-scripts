@@ -1,13 +1,13 @@
 #!/bin/bash
 clear
-echo "DestiCOM.net ARK-Server-Control (by DerBorny)"
+echo -e  "\e[1;4;31mDestiCOM.net ARK-Server-Control (by DerBorny)\e[0m"
 echo "#############################################"
 echo "Mögliche Optionen:"
 echo "broadcast, restart, status, update, backup, start, stop, help"
 echo ""
 echo ""
 echo ""
-read -p "Was möchtest du tun? " ANTWORT
+echo -e "\e[4mWas möchtest du tun?\e[0m  " ANTWORT
 
 case "$ANTWORT" in
 

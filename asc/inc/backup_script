@@ -1,0 +1,26 @@
+#!/bin/bash
+#RCON Backup Script (by DerBorny)
+
+local DATE=$(date +%Y-%m-%d_%H-%M-%S)
+local BACKUP_FILE="/hdd/sdc/backups/arksrv/${DATE}.tgz"
+
+# /
+# - configuration.ini
+# - Game.ini
+# - GameUserSettings.ini
+local files="/home/arksrv/configuration.ini"
+files="${files} /home/arksrv/Game.ini"
+files="${files} /home/arksrv/GameUserSettings.ini"
+    # /game/ShooterGame/Saved/
+    # - /SavedArks/*.arkprofile
+    # - /SavedArks/*.arktribe
+    # - /SavedArks/TheIsland.ark
+    # - /SavedArks/TheIsland_AntiCorruptionBackup.bak
+    # - /SavedArks/TheIsland_NewLaunchBackup.bak
+files="${files} /home/arksrv/game/ShooterGame/Saved/SavedArks/*.arkprofile"
+files="${files} /home/arksrv/game/ShooterGame/Saved/SavedArks/*.arktribe"
+files="${files} /home/arksrv/game/ShooterGame/Saved/SavedArks/TheIsland.ark"
+files="${files} /home/arksrv/game/ShooterGame/Saved/SavedArks/TheIsland_AntiCorruptionBackup.bak"
+files="${files} /home/arksrv/game/ShooterGame/Saved/SavedArks/TheIsland_NewLaunchBackup.bak"
+
+    tar -czf $BACKUP_FILE $files 2> /dev/null &
