@@ -2,12 +2,13 @@
 clear
 echo -e  "\e[1;4;31mDestiCOM.net ARK-Server-Control (by DerBorny)\e[0m"
 echo "#############################################"
+echo ""
 echo "Mögliche Optionen:"
 echo "broadcast, restart, status, update, backup, start, stop, help"
 echo ""
 echo ""
 echo ""
-echo -e "\e[4mWas möchtest du tun?\e[0m  " ANTWORT
+read -p "Was möchtest du tun? " ANTWORT
 
 case "$ANTWORT" in
 
@@ -29,7 +30,7 @@ case "$ANTWORT" in
 			;;
 	backup)
 		cd ~
-		./arkserver.sh backup
+		./asc/backup
 			;;
 	start)
 		cd ~

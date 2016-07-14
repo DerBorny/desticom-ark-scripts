@@ -1,0 +1,22 @@
+#!/bin/bash
+
+clear
+echo "Hilfe: 'broadcast, restart, status, update, backup, start, stop, help'"
+echo ""
+echo ""
+sleep 0.5
+echo "broadcast - Öffnet das Script um Auto-Broadcasts zu definieren"
+sleep 0.5
+echo "restart - Speichert nach 60 Sekunden, fährt herunter und wieder hoch"
+sleep 0.5
+echo "status - Zeigt den aktuellen Status des Servers"
+sleep 0.5
+echo "update - Prüft die Spielversion und aktualisiert sie, falls veraltet"
+sleep 0.5
+echo "start - Startet den Server"
+sleep 0.5
+echo "stop - Stoppt den Server"
+echo ""
+echo ""
+sleep 30
+

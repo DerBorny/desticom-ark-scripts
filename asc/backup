@@ -1,6 +1,6 @@
 #!/bin/bash
 
-screen -S BackupScript ./arkserver.sh backup
+screen -S BackupScript /home/arksrv/asc/inc/backup_script
 
 
 exit
