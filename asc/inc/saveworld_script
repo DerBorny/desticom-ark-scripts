@@ -21,6 +21,7 @@ echo "Der Speichervorgang wird eingeleitet..."
 echo ""
 echo ""
 clear
-rcon -P${PW} -a${IP} -p${PORT} SaveWorld
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} SaveWorld
+sleep 3
 
 exit

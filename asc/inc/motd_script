@@ -28,7 +28,7 @@ clear
 echo "Folgende Nachricht wird als Message of the Day festgelegt:  ${MESSAGE}"
 echo ""
 echo ""
-echo "Broadcast 1"
-rcon -P${PW} -a${IP} -p${PORT} SetMessageOfTheDay $MESSAGE
-
+echo "Antwort vom Server: "
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} SetMessageOfTheDay $MESSAGE
+sleep 3
 exit

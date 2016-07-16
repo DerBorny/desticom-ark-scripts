@@ -22,7 +22,8 @@ echo ""
 echo " Nr --- Spieler --- SteamID "
 echo "-----------------------------"
 clear
-./asc/inc/rcon -P${PW} -a${IP} -p${PORT} ListPlayers | grep -o "[0-9]*$"
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} ListPlayers
+echo "-----------------------------"
 echo ""
 echo ""
 read -p "Wen willst du bannen? (SteamID) " BANPLAYER

@@ -34,5 +34,5 @@ echo ""
 echo "Gib erneut ./start ein um deine Auswahl zu treffen!"
 echo ""
 sleep 10
-exit
+exit 1
 

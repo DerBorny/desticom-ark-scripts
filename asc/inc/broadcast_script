@@ -36,64 +36,65 @@ echo "Folgende Nachricht wird im Abstand von ${ABSTAND} Sekunden, 20 mal geposte
 echo ""
 echo ""
 echo "Broadcast 1"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 2"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 3"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 4"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 5"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 6"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 7"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 8"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 9"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 10"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 11"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 12"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 13"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 14"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 15"
-rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 16"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./inc/./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 17"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./inc/./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 18"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./inc/./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 19"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./inc/./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 20"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+./inc/./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 
 exit
+
