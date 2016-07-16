@@ -1,22 +1,38 @@
 #!/bin/bash
 
 clear
-echo "Hilfe: 'broadcast, restart, status, update, backup, start, stop, help'"
+echo "Hilfe: 'broadcast, motd, saveworld, kick, ban, unban,  restart, status, update, backup, start, stop, help'"
 echo ""
 echo ""
-sleep 0.5
+sleep 0.3
 echo "broadcast - Öffnet das Script um Auto-Broadcasts zu definieren"
-sleep 0.5
+sleep 0.3
+echo "motd - Richet eine Message of The Day ein!"
+sleep 0.3
+echo "saveworld - Speichert Ingame die Welt und die Spielerdaten!"
+sleep 0.3
+echo "kick - Kickt einen Spieler via SteamID vom Server!"
+sleep 0.3
+echo "ban - Bannt einen Spieler via SteamID vom Server!"
+sleep 0.3
+echo "unban - Entbannt einen Spieler via SteamID!"
+sleep 0.3
+echo "backup - Fertigt ein Backup von der Ingame Welt und den Spielerdaten an!"
+sleep 0.3
 echo "restart - Speichert nach 60 Sekunden, fährt herunter und wieder hoch"
-sleep 0.5
+sleep 0.3
 echo "status - Zeigt den aktuellen Status des Servers"
-sleep 0.5
+sleep 0.3
 echo "update - Prüft die Spielversion und aktualisiert sie, falls veraltet"
-sleep 0.5
+sleep 0.3
 echo "start - Startet den Server"
-sleep 0.5
+sleep 0.3
 echo "stop - Stoppt den Server"
+sleep 0.3
 echo ""
 echo ""
-sleep 30
+echo "Gib erneut ./start ein um deine Auswahl zu treffen!"
+echo ""
+sleep 10
+exit
 

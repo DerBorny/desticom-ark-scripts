@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+screen -S arksaveworldscript ./asc/inc/saveworld_script
+
+
+exit

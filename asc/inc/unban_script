@@ -1,0 +1,33 @@
+#!/bin/bash
+#RCON UnBan Script (2016, by DerBorny)
+
+
+##RCON CONFIGURATION##
+source ./inc/.config
+source /home/arksrv/asc/inc/.config
+
+
+
+
+##DONT EDIT ANYTHING##
+clear
+echo -e  "\e[1;4;31mUnBan Script\e[0m"
+echo "2016 - DerBorny"
+echo "-----------------------------"
+echo "UnBan geht an: ${IP}:${PORT}"
+echo ""
+echo ""
+echo "Folgende Spieler können durch Eingabe der SteamID gebannt werden"
+echo ""
+echo " Nr --- Spieler --- SteamID "
+echo "-----------------------------"
+clear
+cat /var/www/html/arkbans.txt
+echo ""
+echo ""
+read -p "Wen willst du unbannen? (SteamID) " UNBANPLAYER
+
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} UnBanPlayer $UNBANPLAYER
+grep -v "${UNBANPLAYER}" /var/www/html/arkbans.txt > temp && mv temp /var/www/html/arkbans.txt
+
+exit

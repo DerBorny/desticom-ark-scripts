@@ -1,0 +1,26 @@
+#!/bin/bash
+#RCON SaveWorld Script (2016, by DerBorny)
+
+
+##RCON CONFIGURATION##
+source ./inc/.config
+source /home/arksrv/asc/inc/.config
+
+
+
+
+##DONT EDIT ANYTHING##
+clear
+echo -e  "\e[1;4;31mSaveWorld Script\e[0m"
+echo "2016 - DerBorny"
+echo "-----------------------------"
+echo "SaveWorld geht an: ${IP}:${PORT}"
+echo ""
+echo ""
+echo "Der Speichervorgang wird eingeleitet..."
+echo ""
+echo ""
+clear
+rcon -P${PW} -a${IP} -p${PORT} SaveWorld
+
+exit

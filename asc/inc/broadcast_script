@@ -3,7 +3,8 @@
 
 
 ##RCON CONFIGURATION##
-source ./inc/config
+source ./inc/.config
+source /home/arksrv/asc/inc/.config
 
 
 
@@ -35,49 +36,49 @@ echo "Folgende Nachricht wird im Abstand von ${ABSTAND} Sekunden, 20 mal geposte
 echo ""
 echo ""
 echo "Broadcast 1"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 2"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 3"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 4"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 5"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 6"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 7"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 8"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 9"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 10"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 11"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 12"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 13"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 14"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 15"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
+rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE
 sleep ${ABSTAND}
 echo "Broadcast 16"
 ./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast $MESSAGE

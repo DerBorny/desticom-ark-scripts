@@ -4,8 +4,9 @@ echo -e  "\e[1;4;31mDestiCOM.net ARK-Server-Control (by DerBorny)\e[0m"
 echo "#############################################"
 echo ""
 echo "Mögliche Optionen:"
-echo "broadcast, restart, status, update, backup, start, stop, help"
+echo "broadcast, motd, saveworld, kick, ban, unban, restart, status, update, backup, start, stop, help"
 echo ""
+echo "mit 'exit' wird das Script beendet!"
 echo ""
 echo ""
 read -p "Was möchtest du tun? " ANTWORT
@@ -15,6 +16,26 @@ case "$ANTWORT" in
 	broadcast|b)
 		cd ~
 		./asc/broadcast
+			;;
+	motd)
+		cd ~
+		./asc/motd
+			;;
+	saveworld|save)
+		cd ~
+		./asc/saveworld
+			;;
+	kick)
+		cd ~
+		./asc/kick
+			;;
+	ban)
+		cd ~
+		./asc/ban
+			;;
+	unban)
+		cd ~
+		./asc/unban
 			;;
 	restart)
 		cd ~
@@ -43,6 +64,9 @@ case "$ANTWORT" in
 	help|h)
 		cd ~
 		./asc/help
+			;;
+	exit|e)
+		exit 1
 			;;
 esac
 		cd ~

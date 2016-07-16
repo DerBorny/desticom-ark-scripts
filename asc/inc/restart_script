@@ -1,18 +1,27 @@
 #!/bin/bash
 #RCON Restart Script (by DerBorny)
 
-source ./inc/.config
+source ./asc/inc/.config
+source /home/arksrv/asc/inc/.config
 
+
+read -p "Bist du dir Sicher das du den Server neustarten willst???" ANTWORT
+
+
+
+case $ANTWORT in
+
+yes|y|ja|j)
 echo "Broadcast: Server wird in 60 Sekunden heruntergefahren!"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast Server wird in 60 Sekunden heruntergefahren!
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast Server wird in 60 Sekunden heruntergefahren!
 sleep 30
 echo "Broadcast: Server wird in 30 Sekunden heruntergefahren!"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast Server wird in 30 Sekunden heruntergefahren!
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast Server wird in 30 Sekunden heruntergefahren!
 sleep 25
 echo "Broadcast: Server speichert und faehrt herunter!"
-./inc/rcon -P${PW} -a${IP} -p${PORT} broadcast Server speichert und faehrt herunter!
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} broadcast Server speichert und faehrt herunter!
 echo "Welt und Spielerdaten werden gespeichert!"
-./inc/rcon -P${PW} -a${IP} -p${PORT} SaveWorld
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} SaveWorld
 sleep 5
 echo "ARK Server wird heruntergefahren!"
 ./arkserver.sh stop
@@ -21,5 +30,13 @@ echo "Backup wird angefertigt /hdd/sdc/backups/arksrv/"
 sleep 2
 echo "ARK Server wird wieder gestartet!"
 ./arkserver.sh start
-end
+;;
 
+no|n|nein)
+echo "Vorgang abgebrochen!"
+;;
+esac
+cd ~
+./start
+exit 1
+;;

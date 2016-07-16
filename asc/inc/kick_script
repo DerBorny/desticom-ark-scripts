@@ -1,0 +1,32 @@
+#!/bin/bash
+#RCON Kick Script (2016, by DerBorny)
+
+
+##RCON CONFIGURATION##
+source ./inc/.config
+source /home/arksrv/asc/inc/.config
+
+
+
+
+##DONT EDIT ANYTHING##
+clear
+echo -e  "\e[1;4;31mKick Script\e[0m"
+echo "2016 - DerBorny"
+echo "-----------------------------"
+echo "Kick geht an: ${IP}:${PORT}"
+echo ""
+echo ""
+echo "Folgende Spieler können durch Eingabe der SteamID gekickt werden"
+echo ""
+echo ""
+clear
+echo " Nr --- Name --- SteamID "
+echo "-----------------------------"
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} ListPlayers
+echo ""
+echo ""
+read -p "Wen willst du kicken? (SteamID) " KICKPLAYER
+./asc/inc/rcon -P${PW} -a${IP} -p${PORT} KickPlayer $KICKPLAYER
+
+exit
