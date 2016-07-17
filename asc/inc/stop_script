@@ -1,0 +1,46 @@
+#!/bin/bash
+#RCON Kick Script (2016, by DerBorny)
+
+
+##RCON CONFIGURATION##
+source ./inc/.config
+source /home/arksrv/asc/inc/.config
+
+
+
+
+##DONT EDIT ANYTHING##
+clear
+echo -e  "\e[1;4;31mStop Script\e[0m"
+echo "2016 - DerBorny"
+echo "-----------------------------"
+echo "Stop geht an: ${IP}:${PORT}"
+echo ""
+
+
+read -p "Bist du dir Sicher das du den Server STOPPEN willst? " ANTWORT
+
+
+
+case $ANTWORT in
+
+	yes|y|ja|j)
+
+		echo "Speichere Welt und Spielderdaten..."
+		./asc/inc/rcon -P${PW} -a${IP} -p${PORT} SaveWorld
+		sleep 5
+		./asc/inc/rcon -P${PW} -a${IP} -p${PORT} DoExit
+	;;
+
+	no|n|nein)
+
+		echo "Script wird beendet!"
+	;;
+
+esac
+cd ~
+./start
+
+
+exit 1
+;;
